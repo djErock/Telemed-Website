@@ -48,7 +48,8 @@
     background: -webkit-linear-gradient(#d52827, #a11e1e); 
     background: -o-linear-gradient(#d52827, #a11e1e); 
     background: -moz-linear-gradient(#d52827, #a11e1e); 
-    background: linear-gradient(#d52827, #a11e1e); 
+    background: linear-gradient(#d52827, #a11e1e);
+    box-shadow: 2px 2px 0px #000; 
 }
 .slide figcaption.slideIn{
     transform: translateX(0) skewX(45deg);

@@ -6,12 +6,12 @@ class Chart extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            
+
         }
     }
 
     componentDidMount() {
-        
+
     };
 
     componentWillUnmount() {
@@ -19,17 +19,32 @@ class Chart extends Component {
     };
 
     render() {
+        let chart = null;
         if (this.props.type === "table") {
-            
-        }else {
-
+            chart = <Table />;
+        }else if (this.props.type === "graph") {
+            chart = <Graph />;
         }
 
         return (
             <article className="container chart">
+                {chart}
             </article>
         );
     }
 };
+
+
+function Table(props) {
+    return (
+        <h1>I'm a Table chart!</h1>
+    );
+}
+
+function Graph(props) {
+    return (
+        <h1>I'm a Graph chart!</h1>
+    );
+}
 
 export default Chart;
