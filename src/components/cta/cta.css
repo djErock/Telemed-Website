@@ -3,13 +3,11 @@
 }
 aside {
     display: table-cell;
-    width: 33.3%;
-}
-aside:last-of-type {
-    width: 33.4%;
+    background:  #fff;
 }
 aside > div {
-    border: 2px ridge #ccc;
+    border: 1px ridge #dfdfdf;
+    box-shadow: 2px 2px 2px #999;
     overflow: hidden;
 }
 aside:first-of-type > div {
@@ -48,6 +46,7 @@ aside .CTAContent {
     padding: 15px;
 }
 aside .CTAContent p{
+    text-align: center;
     font-size: 1em;
     line-height: 1.5em;
 }

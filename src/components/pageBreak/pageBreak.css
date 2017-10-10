@@ -1,0 +1,40 @@
+.pageBreak {
+    width: 100%;
+    border-top: 1px ridge #dfdfdf;
+    border-bottom: 1px ridge #dfdfdf;
+    box-shadow: 2px 2px 2px #999;
+    background: #a11e1e;
+    background: -webkit-linear-gradient(#d52827, #a11e1e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d52827, #a11e1e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d52827, #a11e1e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d52827, #a11e1e); /* Standard syntax */
+    color: #fff;
+}
+.pageBreak h2{
+    padding: 10px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 0px #000;
+}
+
+@media only screen and (max-width: 400px) {
+  
+    .pageBreak h2{
+        font-size: .85em;
+    }
+	
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    
+    .pageBreak h2{
+        font-size: 1em;
+    }
+
+}
+
+@media only screen and (min-width: 961px) {
+	
+    
+	
+}

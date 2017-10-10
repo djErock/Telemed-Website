@@ -90,7 +90,7 @@ class Slider extends Component {
             </div>
         );
         return (
-            <article className="slideshow">
+            <article className="container slideshow">
                 <div className="slider rounded">
                     {slides}
                 </div>

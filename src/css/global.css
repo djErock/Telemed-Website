@@ -21,7 +21,6 @@ section {
 .container {
     width: 100%;
     margin: 0 auto;
-    height: 100%;
 }
 .table {
     display: table;
@@ -39,5 +38,6 @@ section {
 }
 .rounded {
     border-radius: 10px;
-    border: 1px ridge #ccc;
+    border: 1px ridge #dfdfdf;
+    box-shadow: 2px 2px 2px #999;
 }
