@@ -1,0 +1,48 @@
+{
+  "name": "emr4",
+  "version": "1.0.0",
+  "description": "Caduceus USA Telemedicine proprietary website version 1 Reactjs Environment",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "concurrently \"webpack-dev-server\" \" node ./server/core/server.js\"",
+    "dev": "webpack-dev-server",
+    "server": "node ./server/core/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djErock/Telemed-Website.git"
+  },
+  "author": "Erik Grosskurth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djErock/Telemed-Website/issues"
+  },
+  "homepage": "https://github.com/djErock/Telemed-Website#readme",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "jquery": "^3.2.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router-dom": "^4.1.1",
+    "react-transition-group": "^1.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.5.0",
+    "css-loader": "^0.28.4",
+    "express": "^4.16.0",
+    "file-loader": "^0.11.2",
+    "mssql": "^4.1.0",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-middleware": "^1.12.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}

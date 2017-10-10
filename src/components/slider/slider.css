@@ -1,0 +1,87 @@
+.slideshow {
+    width: 100%;
+    padding: 15px;
+}
+.slider {
+    position: relative;
+    width: 100%;
+    background: #ccc;
+    height:  250px;
+}
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slide.active {
+    opacity: 1;
+    transition: opacity 800ms ease-in;
+}
+.slide.inactive {
+    opacity: 0;
+    transition: opacity 800ms ease-out;
+}
+.slideHolder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow:hidden;
+}
+.slide img{
+    position: absolute;
+    height: 250px;
+    border-radius: 10px;
+}
+.slide figcaption{
+    position: absolute;
+    transition: transform 400ms ease-in;
+    bottom: 25px;
+    right: -25px;
+    padding: 10px 50px;
+    background: #a11e1e;
+    background: -webkit-linear-gradient(#d52827, #a11e1e); 
+    background: -o-linear-gradient(#d52827, #a11e1e); 
+    background: -moz-linear-gradient(#d52827, #a11e1e); 
+    background: linear-gradient(#d52827, #a11e1e); 
+}
+.slide figcaption.slideIn{
+    transform: translateX(0) skewX(45deg);
+}
+.slide figcaption.slideOut{
+    transform: translateX(100%) skewX(45deg);
+}
+.slide figcaption p{
+    font-weight: bold;
+    font-size: 2em;
+    color: #fff;
+    text-shadow:  2px 2px 0px #000;
+    transform: skewX(-45deg);
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .slide figcaption p{
+        font-size: .85em;
+    } 
+	
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+   
+    .slide figcaption p{
+        font-size: 1.15em;
+    } 
+
+}
+
+@media only screen and (min-width: 961px) {
+	
+    
+	
+}

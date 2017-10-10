@@ -1,0 +1,39 @@
+header {
+    position: fixed;
+    transform: translateY(-100px);
+    transition: transform 400ms ease-in;
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px ridge #ccc;
+    background: #eeeeee; 
+    background: -moz-linear-gradient(top, #eeeeee 0%, #eeeeee 100%); 
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#eeeeee 100%); 
+    background: linear-gradient(to bottom, #eeeeee 0%,#eeeeee 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); 
+}
+header .table {
+    display: table;
+    width: 100%;
+}
+header .row {
+    display: table-row;
+    width: 100%;
+    height: 100%;
+}
+header .cell {
+    display: table-cell;
+    height: 100px;
+    text-align: center;
+    vertical-align: middle;
+}
+header .cell #logo {
+    height: 100%;
+}
+
+header.slideIn {
+    transform: translateY(0);
+}
+
+header.slideOut {
+    transform: translateY(-100%);
+}
