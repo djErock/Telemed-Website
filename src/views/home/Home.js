@@ -17,7 +17,7 @@ const Home = () => (
     </div>
     <PageBreak heading="Telemed: Return on Investment" />
     <div className="container callsToAction table">
-      <Chart type="table" />
+      <Chart type="roi" />
     </div>
   </section>
 )

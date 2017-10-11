@@ -40,7 +40,7 @@
 }
 .slide figcaption{
     position: absolute;
-    transition: transform 400ms ease-in;
+    transition: transform 800ms ease-in;
     bottom: 25px;
     right: -25px;
     padding: 10px 50px;

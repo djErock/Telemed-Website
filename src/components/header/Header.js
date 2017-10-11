@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { CSSTransitionGroup } from 'react-transition-group' // ES6
-
+import { CSSTransitionGroup } from 'react-transition-group' 
+import { Link } from 'react-router-dom';
 
 import Logo from '../../img/Telemed-Logo.png';
 
@@ -39,7 +39,7 @@ class Header extends Component {
                     <div className="row">
                         <div className="cell"></div>
                         <div className="cell">
-                            <img id="logo" src={Logo} />
+                            <Link to="/"><img id="logo" src={Logo} /></Link>
                         </div>
                         <div className="cell"></div>
                     </div>

@@ -1,0 +1,120 @@
+.roiTables {
+    width: 100%;
+    margin: 15px 0px 0px;
+    display: flex;
+}
+.halfTable {
+    display: inline-block; 
+    width: 50%;
+    white-space: normal;
+    border: 1px solid #999;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 2px 2px 2px #999;
+    overflow: hidden;
+}
+.halfTable:first-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 0px 4px 0px 0px;
+}
+.halfTable:last-child {
+    border: 1px solid #999;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin: 0px 0px 0px 4px;
+}
+.tableContainer .imgTray {
+    width: 100%;
+    max-height: 250px;
+    overflow: hidden;
+}
+.tableContainer .imgTray img {
+    width: 100%;
+}
+.tableContainer .table .row:nth-child(odd) {
+    background: #f5f5f5;
+}
+.tableContainer .table .cell {
+    width: 100%;
+    padding: 5px 10px;
+}
+.tableContainer .table .cell:first-of-type {
+    width: 80%;
+    border-right: 1px solid #999;
+}
+.tableContainer .table .cell:last-of-type {
+    width: 20%;
+    text-align: right;
+}
+.tableContainer .table .cell.tableHeader{
+    width: 100%;
+    background: #a11e1e;
+    background: -webkit-linear-gradient(#d52827, #a11e1e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d52827, #a11e1e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d52827, #a11e1e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d52827, #a11e1e); /* Standard syntax */
+    color: #fff;
+    column-span: all; /* W3C */
+    border: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #000;
+    text-align: center;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .roiTables {
+        display: block;
+        margin: 0px;
+    }
+    .halfTable {
+        display: block; 
+        width: 100%;
+        margin: 15px 0px 0px;
+    }
+    .halfTable:first-child {
+        border-radius: 10px;
+    }
+    .halfTable:last-child {
+        border: 1px solid #999;
+        border-radius: 10px;
+    }
+    .tableContainer .table {
+        display: table;
+    }
+	
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+   
+    .roiTables {
+        display: block;
+        margin: 0px;
+    }
+    .halfTable {
+        display: block; 
+        width: 100%;
+        margin: 15px 0px 0px;
+    }
+    .halfTable:first-child {
+        border-radius: 10px;
+        margin: 15px 0px 0px;
+    }
+    .halfTable:last-child {
+        border: 1px solid #999;
+        border-radius: 10px;
+        margin: 15px 0px 0px;
+    }
+    .tableContainer .table {
+        display: table;
+    }
+
+}
+
+@media only screen and (min-width: 961px) {
+	
+    
+	
+}

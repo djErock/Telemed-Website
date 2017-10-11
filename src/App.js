@@ -19,10 +19,10 @@ const App = () => (
   <BrowserRouter>
     <div>
       <Header />
-      <Route exact path="/" component={Home} />
-      <Route path="/aboutus/" component={About} />
-      <Route path="/contact/" component={Enroll} />
-      <Route path="/enroll/" component={Contact} />
+        <Route exact path="/" component={Home} />
+        <Route path="/aboutus" component={About} />
+        <Route path="/contact" component={Enroll} />
+        <Route path="/enroll" component={Contact} />
       <Footer />
     </div>
   </BrowserRouter>
