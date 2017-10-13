@@ -1,0 +1,135 @@
+
+.services {
+    display: flex;
+    padding: 15px 0px;
+    border-bottom: 2px ridge #f5f5f5;
+}
+.services .service {
+    display: table-cell;
+    width: 33%;
+    padding: 25px;
+}
+.services .service:nth-of-type(2) {
+    width: 34%;
+}
+.service .copy {
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin-top: -5px;
+}
+.service .copy h3 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-style: italic;
+}
+.service .copy h3 span{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+}
+.service .copy h3 strong{
+    font-style: normal;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.service .paragraph {
+    padding: 15px 15px;
+    text-align: center;
+}
+.service .paragraph p{
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.features {
+    padding:15px;
+    display: flex;
+}
+.features .halfTable {
+    border: none;
+    background-color: transparent ; 
+    box-shadow: none;
+}
+.feature {
+    margin: 0px 0px 15px 0px
+}
+.feature h2 {
+    font-size: 1.2em;
+    padding: 5px 10px 0px;
+}
+.feature hr {
+    border:1px double #ccc;
+    border-style: dotted dashed solid double;
+    margin: 15px 0px;
+}
+.spotLight {
+    background: #fff;
+    width: 100%;
+    border-bottom: 6px solid #a11e1e;
+}
+.spotLight img {
+    width: 100%;
+}
+.spotLight h3{
+    padding: 15px 15px 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #a11e1e;
+    text-shadow: 1px 1px 0px #dfdfdf;
+    line-height: 1.4em;
+}
+.spotLight p{
+    border-top: 1px solid #dfdfdf;
+    padding: 5px 15px 15px;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+.spotLight a{
+    width: 90%;
+    margin: 15px;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+
+	
+}
+
+@media only screen and (max-width: 960px) {
+   
+    .services {
+        display: block;
+        padding: 15px 0px;
+        border-bottom: 2px ridge #f5f5f5;
+    }
+    .services .service {
+        display: block;
+        width: 100%;
+        padding: 25px;
+    }
+    .services .service:nth-of-type(2) {
+        width: 100%;
+    }
+    .features {
+        display: block;
+    }
+    .feature {
+        padding:15px 40px;
+    }
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+   
+
+
+}
+
+@media only screen and (min-width: 961px) {
+	
+    
+	
+}

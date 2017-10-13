@@ -57,7 +57,7 @@ class CTA extends Component {
                     <img src={ctaImages[this.state.actionState.img]} alt={this.state.actionState.altText} />
                     <div className="CTAContent">
                         <p>{this.state.actionState.copy}</p>
-                        <Link to={this.props.destination}>{this.state.actionState.linkText}</Link>
+                        <Link className="action" to={this.props.destination}>{this.state.actionState.linkText}</Link>
                     </div>
                 </div>
             </aside>

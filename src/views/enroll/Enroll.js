@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
+import Form from '../../components/forms/forms.js';
+
 import './enroll.css';
 
 const Enroll = () => (
-  <section className="enroll">
-    <h1>Enroll</h1>
+  <section className="about">
+    <Form type="enrollment" />
   </section>
 )
 

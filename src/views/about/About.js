@@ -10,7 +10,7 @@ const About = () => (
   <section className="about">
     <Banner imgSrc="about_caduceus_usa_telemed.jpg" />
     <PageBreak heading="Telemed: Remote locations using telecommunications technology" />
-    <PageContent />
+    <PageContent type="about"/>
     
   </section>
 )

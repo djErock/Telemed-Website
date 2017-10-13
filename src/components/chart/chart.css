@@ -3,16 +3,6 @@
     margin: 15px 0px 0px;
     display: flex;
 }
-.halfTable {
-    display: inline-block; 
-    width: 50%;
-    white-space: normal;
-    border: 1px solid #999;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 2px 2px 2px #999;
-    overflow: hidden;
-}
 .halfTable:first-child {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -69,11 +59,6 @@
         display: block;
         margin: 0px;
     }
-    .halfTable {
-        display: block; 
-        width: 100%;
-        margin: 15px 0px 0px;
-    }
     .halfTable:first-child {
         border-radius: 10px;
     }
@@ -92,11 +77,6 @@
     .roiTables {
         display: block;
         margin: 0px;
-    }
-    .halfTable {
-        display: block; 
-        width: 100%;
-        margin: 15px 0px 0px;
     }
     .halfTable:first-child {
         border-radius: 10px;
