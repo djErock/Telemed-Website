@@ -1,5 +1,5 @@
 .form-style{
-    max-width: 500px;
+    width: 100%;
     padding: 10px 20px;
     background: #f4f7f8;
     margin: 10px auto;
@@ -10,6 +10,7 @@
     background: linear-gradient(to bottom, #eeeeee 0%,#eeeeee 100%); 
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#eeeeee',GradientType=0 ); 
     box-shadow: 2px 2px 2px #999;
+    border: 1px solid #999;
     border-radius: 8px;
     font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -74,13 +75,17 @@
     height:35px;
 }
 .form-style .number {
-    background: #1abc9c;
+    background: #a11e1e;
+    background: -webkit-linear-gradient(#d52827, #a11e1e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d52827, #a11e1e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d52827, #a11e1e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d52827, #a11e1e); /* Standard syntax */
     color: #fff;
     height: 35px;
     width: 35px;
     display: inline-block;
     font-size: 0.8em;
-    margin-right: 4px;
+    margin-right: 10px;
     line-height: 37px;
     text-align: center;
     text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
@@ -92,20 +97,73 @@
 {
     position: relative;
     display: block;
-    padding: 19px 39px 18px 39px;
+    padding: 9px 39px 8px 39px;
     color: #FFF;
     margin: 0 auto;
-    background: #1abc9c;
+    background: #a11e1e;
+    background: -webkit-linear-gradient(#d52827, #a11e1e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d52827, #a11e1e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d52827, #a11e1e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d52827, #a11e1e); /* Standard syntax */
+    color: #fff;
     font-size: 18px;
     text-align: center;
     font-style: normal;
     width: 100%;
-    border: 1px solid #16a085;
+    border: 1px solid #111;
+    border-radius: 6px;
     border-width: 1px 1px 3px;
     margin-bottom: 10px;
 }
 .form-style input[type="submit"]:hover,
 .form-style input[type="button"]:hover
 {
-    background: #109177;
+    background: #333333;
+    background: -webkit-linear-gradient(#666, #333); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#666, #333); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#666, #333); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#666, #333); /* Standard syntax */
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.formElementsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 400px) {
+    
+    .formElementsContainer > div  {
+        flex-grow: 1;
+        width: 100%;
+        padding: 0px;
+    }
+	
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	
+
+    .formElementsContainer > div  {
+        flex-grow: 1;
+        width: 50%;
+        padding: 0px 15px 0px 0px;
+    }
+
+}
+
+@media only screen and (min-width: 961px) {
+	
+
+    .formElementsContainer > div  {
+        flex-grow: 1;
+        width: 33%;
+        padding: 0px 30px 0px 0px;
+    }
+    .formElementsContainer > div.stretch {
+        width: 100%;
+    }
+	
 }
