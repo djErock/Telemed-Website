@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var path = require('path');
 
 module.exports = {
@@ -43,5 +44,11 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
+    new HtmlWebpackPlugin({
+      title: 'Caduceus USA Telemedicine Website',
+      inject: true,
+      template: 'index.html'
+    })
+
   ]
 };
