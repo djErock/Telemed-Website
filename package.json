@@ -6,7 +6,9 @@
   "scripts": {
     "build": "webpack",
     "start": "concurrently \"webpack-dev-server --inline --content-base .\" \" node ./server/core/server.js\"",
+
     "dev": "webpack-dev-server --inline --content-base .",
+
     "server": "node ./server/core/server.js"
   },
   "repository": {
