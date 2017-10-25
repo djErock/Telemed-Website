@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Connect } from "react-redux";
 
 import { ImportAll } from '../../util/helpers'
 
 const ctaImages = ImportAll(require.context('../../img/cta', false, /\.(png|jpe?g|svg)$/));
 import './cta.css';
+
+//@Connect()
 
 class CTA extends Component {
     constructor(props) {

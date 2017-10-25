@@ -48,7 +48,6 @@ module.exports = {
       title: 'Caduceus USA Telemedicine Website',
       inject: true,
       template: 'index.html'
-    })
-
+    }) 
   ]
 };

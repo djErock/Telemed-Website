@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { CSSTransitionGroup } from 'react-transition-group' 
+import { CSSTransitionGroup } from "react-transition-group";
 import { Link } from 'react-router-dom';
 
 import Logo from '../../img/Telemed-Logo.png';
