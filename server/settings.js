@@ -1,7 +1,7 @@
 exports.dbConfig = {
-    server: "10.1.10.6",
-    user: "sa",
-    password: "Teamwork123",
-    database: "caduceusnew",
+    server: "local.database.ip",
+    user: "user",
+    password: "pass",
+    database: "dbName",
     port: 1433
 }
