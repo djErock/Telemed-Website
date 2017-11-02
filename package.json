@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/djErock/Telemed-Website#readme",
   "dependencies": {
+    "animate.css": "^3.5.2",
     "axios": "^0.16.2",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
@@ -29,6 +30,7 @@
     "react-dom": "^15.6.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.1.1",
+    "react-router-transition": "^1.1.1",
     "react-transition-group": "^1.2.1",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",

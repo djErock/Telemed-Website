@@ -84,8 +84,33 @@ a.outgoing::after{   z-index: 2;  border-left-color: #a11e1e;   }
 
 
 
-
-
+.switch-route-appear {
+    transform: translateX(3000px);
+    opacity: 0;
+}
+.switch-route-appear.switch-route-appear-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.6s ease-in;
+}
+.switch-route-enter {
+    opacity: 0;
+    transform: translateX(3000px);
+}
+.switch-route-enter.switch-route-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.2s ease-in 0.4s;
+}
+.switch-route-leave {
+    opacity: 1;
+    transform: translateX(0);
+}
+.switch-route-leave.switch-route-leave-active {
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 0.65s ease-out;
+}
 
 
 

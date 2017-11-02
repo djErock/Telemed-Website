@@ -11,7 +11,6 @@ const About = () => (
     <Banner imgSrc="about_caduceus_usa_telemed.jpg" />
     <PageBreak heading="Telemed: Remote locations using telecommunications technology" />
     <PageContent type="about"/>
-    
   </section>
 )
 

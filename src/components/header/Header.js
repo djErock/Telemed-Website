@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import { CSSTransitionGroup } from "react-transition-group";
 import { Link } from 'react-router-dom';
+import { connect } from "react-redux";
 
 import Logo from '../../img/Telemed-Logo.png';
 
 import './header.css';
+import { getCompanies } from "../../actions/actions"
+@connect((store) => {
+    return {
+        companies: store.companies.data
+    }
+})
 
 class Header extends Component {
     constructor(props) {
@@ -17,8 +24,13 @@ class Header extends Component {
     }
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
+        this.props.dispatch(getCompanies());
     }
     
+    componentWillReceiveProps(nextProps) {
+        //console.log(nextProps.companies);
+    }
+
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }

@@ -6,11 +6,11 @@ import './slider.css';
 import { ImportAll } from '../../util/helpers' 
 
 const SliderImages = ImportAll(require.context('../../img/slides', false, /\.(png|jpe?g|svg)$/));
-import { slideshowSettings } from "../../actions/actions"
+import { getSlideshow } from "../../actions/actions"
 @connect((store) => {
     return {
         settings: store.slideshow
-    };
+    }
 })
 class Slider extends Component {
     constructor(props) {
@@ -19,13 +19,12 @@ class Slider extends Component {
     }
 
     componentWillMount() {
-        this.props.dispatch(slideshowSettings());
+        this.props.dispatch(getSlideshow());
     }
 
     componentWillReceiveProps(nextProps) {
         var dis = this;
         var slideItems = nextProps.settings.slides;
-        console.log(slideItems);
         var countdown = setInterval(
             this.switchSlide, 
             nextProps.settings.slideTimer
